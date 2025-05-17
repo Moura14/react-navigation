@@ -1,12 +1,12 @@
-import { SafeAreaView } from 'react-native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import TelaA from './(tabs)/views/TelaA'
-import TelaB from './(tabs)/views/TelaB'
-import TelaC from './(tabs)/views/TelaC'
+
+
+const Stack = createNativeStackNavigator()
+
 
 export default props => (
-    <SafeAreaView style={{flex: 1}}>
-        <TelaA></TelaA>
-       <TelaB></TelaB>
-       <TelaC></TelaC>
-    </SafeAreaView>
+    <Stack.Navigator initialRouteName='TelaA'>
+        <Stack.Screen name='TelaA' component={TelaA}></Stack.Screen>
+    </Stack.Navigator>
 )
