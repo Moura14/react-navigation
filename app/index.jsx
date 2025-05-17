@@ -1,8 +1,12 @@
 import { SafeAreaView } from 'react-native'
-import TextoCentral from './(tabs)/componentes/TextoCentral'
+import TelaA from './(tabs)/views/TelaA'
+import TelaB from './(tabs)/views/TelaB'
+import TelaC from './(tabs)/views/TelaC'
 
 export default props => (
     <SafeAreaView style={{flex: 1}}>
-        <TextoCentral>App</TextoCentral>
+        <TelaA></TelaA>
+       <TelaB></TelaB>
+       <TelaC></TelaC>
     </SafeAreaView>
 )
